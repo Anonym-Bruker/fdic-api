@@ -366,62 +366,6 @@
 					"response": []
 				},
 				{
-					"name": "/banks?assets= - assets not a number",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "1f1b3c1b-02b6-4280-960d-8eee97ca6591",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "e3c3f0b5-d15f-490c-b947-1fc50afa39aa",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{host_banks}}/Banks/getBanks?assets=abc,def,ghi",
-							"host": [
-								"{{host_banks}}"
-							],
-							"path": [
-								"Banks",
-								"getBanks"
-							],
-							"query": [
-								{
-									"key": "assets",
-									"value": "abc,def,ghi"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "/banks?name= -",
 					"event": [
 						{
